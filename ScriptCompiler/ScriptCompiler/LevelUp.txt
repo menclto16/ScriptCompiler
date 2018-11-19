@@ -1,0 +1,6 @@
+﻿AddHealth(10);
+AddStrength(1);
+AddIntelligence(1);
+AddSpirit(1);
+
+return true;

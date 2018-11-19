@@ -1,0 +1,3 @@
+﻿AddHealth(24);
+
+return true;

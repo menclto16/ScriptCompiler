@@ -1,0 +1,3 @@
+﻿EquipWeapon("Tome", "Kniha kouzel", 2, 500, 20, 5);
+
+return true;
