@@ -173,7 +173,7 @@
     </ApplicationDefinition>
     <Compile Include="Character.cs" />
     <Compile Include="Game.cs" />
-    <Compile Include="ICharacter.cs" />
+    <Compile Include="ICharacterAction.cs" />
     <Compile Include="Mage.cs" />
     <Compile Include="MagicalWeapon.cs" />
     <Compile Include="PhysicalWeapon.cs" />
@@ -246,6 +246,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="LevelUp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Example.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

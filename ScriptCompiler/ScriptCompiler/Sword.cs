@@ -12,10 +12,5 @@ namespace ScriptCompiler
         {
 
         }
-
-        public void Slash()
-        {
-
-        }
     }
 }

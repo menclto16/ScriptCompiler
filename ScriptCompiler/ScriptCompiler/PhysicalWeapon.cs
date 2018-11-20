@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ScriptCompiler
 {
-    class PhysicalWeapon : Weapon
+    public class PhysicalWeapon : Weapon
     {
         public int AttackDamage;
         public int Sharpness;
@@ -15,6 +15,11 @@ namespace ScriptCompiler
         {
             AttackDamage = attackDamage;
             Sharpness = sharpness;
+        }
+
+        public override void Attack()
+        {
+
         }
     }
 }

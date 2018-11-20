@@ -22,7 +22,7 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Label x:Name="Label1" Content="" Grid.Row="1"></Label>
@@ -39,11 +39,13 @@
             <TextBlock x:Name="weaponType" Text="-"></TextBlock>
             <TextBlock x:Name="weaponValue" Text="-"></TextBlock>
             <TextBlock x:Name="weaponWeightValue" Text="-"></TextBlock>
+            <TextBlock x:Name="weaponAttribute1" Text="-"></TextBlock>
+            <TextBlock x:Name="weaponAttribute2" Text="-"></TextBlock>
         </StackPanel>
         <ListBox Name="lbScriptsReturnValues" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"/>
         <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal">
-            <Button Name="btnOpenScripts" Click="btnOpenScripts_Click" Width="100">Open file</Button>
-            <Button Name="btnRunScripts" Click="btnRunScripts_Click" Width="100">Run Scripts</Button>
+            <Button Name="btnOpenScripts" Click="btnOpenScripts_Click" Width="150">Load Scripts</Button>
+            <Button Name="btnRunScripts" Click="btnRunScripts_Click" Width="150">Run Scripts</Button>
         </StackPanel>
     </Grid>
 </Window>

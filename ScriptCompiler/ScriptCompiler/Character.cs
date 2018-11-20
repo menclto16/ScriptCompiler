@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ScriptCompiler
 {
-    public class Character : ICharacter
+    public class Character : ICharacterAction
     {
         public int Health;
         public int Strength;

@@ -25,5 +25,10 @@ namespace ScriptCompiler
         {
             return Name + " +" + EnhancementLevel;
         }
+
+        public virtual void Attack()
+        {
+
+        }
     }
 }

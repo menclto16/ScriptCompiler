@@ -1,0 +1,5 @@
+﻿EquippedWeapon = new Tome("Kniha Kouzel", 2, 500, 10, 5);
+
+EquipWeapon("Tome", "Kniha Kouzel", 2, 500, 10, 5)
+
+return true;

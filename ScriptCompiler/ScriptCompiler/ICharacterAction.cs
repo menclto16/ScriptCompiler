@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ScriptCompiler
 {
-    public interface ICharacter
+    public interface ICharacterAction
     {
         void AddHealth(int input);
         void AddStrength(int input);

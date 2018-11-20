@@ -33,6 +33,7 @@ namespace ScriptCompiler
         {
             InitializeComponent();
             GameClass.PlayerCharacter = new Mage();
+            refreshTextBlocks();
         }
 
         private void btnRunScripts_Click(object sender, RoutedEventArgs e)
@@ -63,7 +64,6 @@ namespace ScriptCompiler
                 weaponWeightValue.Text = "Weight: " + GameClass.PlayerCharacter.EquippedWeapon.Weight.ToString();
                 weaponValue.Text = "Value: " + GameClass.PlayerCharacter.EquippedWeapon.Value.ToString();
             }
-           
         }
 
         private void btnOpenScripts_Click(object sender, RoutedEventArgs e)

@@ -13,7 +13,7 @@ namespace ScriptCompiler
 
         }
 
-        public void CastSpell()
+        public override void Attack()
         {
 
         }

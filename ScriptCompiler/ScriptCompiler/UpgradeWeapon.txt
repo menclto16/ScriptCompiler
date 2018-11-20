@@ -1,1 +1,5 @@
-﻿return EnhanceWeapon();
+﻿bool result = false;
+
+if (EquippedWeapon != null) result = EnhanceWeapon();
+
+return result;

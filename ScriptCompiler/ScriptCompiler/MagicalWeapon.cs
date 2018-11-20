@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ScriptCompiler
 {
-    class MagicalWeapon : Weapon
+    public class MagicalWeapon : Weapon
     {
         public int MagicalDamage;
         public int MagicalPower;

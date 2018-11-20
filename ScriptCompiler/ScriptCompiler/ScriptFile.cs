@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using Microsoft.CodeAnalysis.CSharp.Scripting;
+using Microsoft.CodeAnalysis.Scripting;
+using Microsoft.CodeAnalysis;
 
 namespace ScriptCompiler
 {
@@ -19,9 +23,13 @@ namespace ScriptCompiler
             Content = content;
         }
 
-        public async void RunScript(ICharacter character)
+        public async void RunScript(Character character)
         {
-            var returnValue = await CSharpScript.EvaluateAsync(Content, globals: character, globalsType: typeof(ICharacter));
+            var metadata = MetadataReference.CreateFromFile(character.GetType().Assembly.Location);
+
+            var scriptOptions = ScriptOptions.Default.WithReferences(metadata).WithImports(GetType().Namespace);
+
+            var returnValue = await CSharpScript.EvaluateAsync(Content, options: scriptOptions, globals: character);
 
             ReturnValue = returnValue.ToString();
         }
